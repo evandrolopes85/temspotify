@@ -81,7 +81,7 @@
 		<div class="row">
 			<div class="col-md-2">&nbsp;</div>
 			<div class="col-md-8">
-				<h5> <a href="recuperamusicas">+ Adicionar M&uacute;sicas</a></h5>
+				<h5> <a href="recuperamusicas?idplaylist=${Playlist.id}">+ Adicionar M&uacute;sicas</a></h5>
 			</div>
 			<div class="col-md-2">&nbsp;</div>
 		</div>

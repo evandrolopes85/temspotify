@@ -1,6 +1,7 @@
 <jsp:useBean id="User"
 	type="br.com.professorisidro.temspotify.model.User" scope="session" />
 <jsp:useBean id="ListaMusicas" type="java.util.List" scope="request" />
+<jsp:useBean id="idPlaylist" type="java.lang.String" scope="request" />
 <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -82,7 +83,7 @@
 			<div class="row">
 				<div class="col-md-2"> </div>
 				<div class="col-md-1">
-					<h4> + </h4>
+					<h4> <a href="./incluirnaplaylist?idmusica=${musica.id}&idplaylist=${idPlaylist}">+</a> </h4>
 				</div>
 				<div class="col-md-7">
 					${musica.title} (${musica.artist})<br/>
